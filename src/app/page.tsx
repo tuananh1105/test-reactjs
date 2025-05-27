@@ -352,7 +352,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="fixed bottom-4 right-4 space-y-4">
+      <div className="fixed bottom-4 right-2 space-y-4 z-auto ">
         <ModeToggle />
       </div>
     </main>
