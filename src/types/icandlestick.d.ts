@@ -47,3 +47,8 @@ type VolumeData = {
   value: number;
   color: string;
 }
+
+type BinanceKlineRaw = [
+  number, string, string, string, string, string,
+  number, string, number, string, string, number
+];

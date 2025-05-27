@@ -10,50 +10,6 @@ import CandlestickChart from "@/components/chart/candlestick-chart";
 import { UTCTimestamp } from "lightweight-charts";
 import { useState } from "react";
 
-// Định nghĩa kiểu ICandleStick
-type ICandleStick = {
-  openTime: number;
-  open: number;
-  high: number;
-  low: number;
-  close: number;
-  volume: number;
-  closeTime: number;
-  baseAssetVolume: number;
-  numberOfTrades: number;
-  takerBuyVolume: number;
-  takerBuyBaseAssetVolume: number;
-  ignore: number;
-};
-
-// Định nghĩa kiểu cho candlestickData và volumeData
-interface CandlestickData {
-  time: UTCTimestamp;
-  open: number;
-  high: number;
-  low: number;
-  close: number;
-}
-
-interface VolumeData {
-  time: UTCTimestamp;
-  value: number;
-  color: string;
-}
-
-// Định nghĩa kiểu cho dữ liệu chỉ báo
-interface IndicatorData {
-  time: UTCTimestamp;
-  value: number;
-}
-
-interface MACDData {
-  time: UTCTimestamp;
-  macd: number;
-  signal: number;
-  histogram: number;
-}
-
 export default function HomePage() {
   const [timeframe, setTimeframe] = useState("1h");
   const { data, isLoading } = useFetchBinanceKlines("BTCUSDT", timeframe, 100);

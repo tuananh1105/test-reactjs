@@ -2,15 +2,13 @@
 
 import {
   createChart,
-  type IChartApi,
-  type DeepPartial,
   type ChartOptions,
-  type CandlestickData,
-  type HistogramData,
+  type DeepPartial,
+  type IChartApi,
   type Time,
 } from "lightweight-charts";
-import { useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
+import { useEffect, useRef } from "react";
 
 export default function CandlestickChart({
   candlestickData,

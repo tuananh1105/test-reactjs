@@ -16,7 +16,7 @@ export const fetchBinanceKlines = async (
     },
   });
 
-  return response.data.map((d: any) => ({
+  return response.data.map((d: BinanceKlineRaw) => ({
     openTime: d[0],
     open: parseFloat(d[1]),
     high: parseFloat(d[2]),
