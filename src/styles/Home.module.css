@@ -1,0 +1,13 @@
+/* Home.module.css */
+.container {
+  background: url('/background-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background: url('/background-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+}
