@@ -88,7 +88,7 @@ export default function CandlestickChart({
     const chart = createChart(chartContainerRef.current, {
       ...chartOptions,
       width: chartContainerRef.current.clientWidth,
-      height: 600,
+      height: 400,
     });
 
     chartRef.current = chart;
@@ -217,7 +217,7 @@ export default function CandlestickChart({
   return (
     <div
       ref={chartContainerRef}
-      style={{ width: "100%", height: "600px" }}
+      style={{ width: "100%", height: "400px" }}
       className="dark:bg-[#1e1e2f]"
     />
   );
